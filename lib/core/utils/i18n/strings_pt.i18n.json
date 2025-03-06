@@ -1,0 +1,33 @@
+{
+  "bus": {
+    "header": {
+      "departureTitle": "Selecionar Ida",
+      "returnTitle": "Selecionar Volta"
+    },
+    "results": {
+      "title": "Melhor Rota"
+    },
+    "selected": {
+      "title": "Informações da Partida"
+    },
+    "button": {
+      "title": "Selecionar"
+    },
+    "errors": {
+      "loadError": "Falha ao carregar os ônibus."
+    }
+  },
+  "seat": {
+    "header": {
+      "title": "Selecionar Assento"
+    },
+    "descriptions": {
+      "selected": "Selecionado",
+      "available": "Disponível",
+      "unavailable": "Indisponível"
+    },
+    "button": {
+      "title": "Confirmar Assento"
+    }
+  }
+}

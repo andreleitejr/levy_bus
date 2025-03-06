@@ -1,0 +1,33 @@
+{
+  "bus": {
+    "header": {
+      "departureTitle": "Select Departure Bus",
+      "returnTitle": "Select Return Bus"
+    },
+    "results": {
+      "title": "Best Route"
+    },
+    "selected": {
+      "title": "Departure Info"
+    },
+    "button": {
+      "title": "Select"
+    },
+    "errors": {
+      "loadError": "Failed to load buses."
+    }
+  },
+  "seat": {
+    "header": {
+      "title": "Select Seat"
+    },
+    "descriptions": {
+      "selected": "Selected",
+      "available": "Available",
+      "unavailable": "Unavailable"
+    },
+    "button": {
+      "title": "Confirm Seat"
+    }
+  }
+}

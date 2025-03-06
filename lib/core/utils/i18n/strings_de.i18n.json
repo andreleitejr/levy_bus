@@ -1,0 +1,33 @@
+{
+  "bus": {
+    "header": {
+      "departureTitle": "Abfahrtsbus auswählen",
+      "returnTitle": "Rückfahrtsbus auswählen"
+    },
+    "results": {
+      "title": "Beste Route"
+    },
+    "selected": {
+      "title": "Abfahrtsinformationen"
+    },
+    "errors": {
+      "loadError": "Fehler beim Laden der Busse."
+    },
+    "button": {
+      "title": "Auswählen"
+    }
+  },
+  "seat": {
+    "header": {
+      "title": "Sitzplatz auswählen"
+    },
+    "descriptions": {
+      "selected": "Ausgewählt",
+      "available": "Verfügbar",
+      "unavailable": "Nicht verfügbar"
+    },
+    "button": {
+      "title": "Sitzplatz bestätigen"
+    }
+  }
+}
