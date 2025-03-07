@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:levy_bus/bus.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 
 final class BusNotifier extends StateNotifier<BusStateImpl> {
   final GetBusUseCase _searchUseCase;
+  final SearchEntity _search;
 
-  BusNotifier(this._searchUseCase) : super(const BusStateImpl.loading());
+  BusNotifier(this._searchUseCase, this._search) : super(const BusStateImpl.loading());
 
-  late final SearchEntity _search;
-
-  Future<void> init(SearchEntity search) async {
+  Future<void> init() async {
     try {
-      _search = search;
-
       final result = await _searchUseCase(_search);
 
       state = BusStateImpl.success(result);

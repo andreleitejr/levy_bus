@@ -32,8 +32,8 @@ dependencies:
   flutter_riverpod:
   get_it:
   google_maps_flutter:
-  json_annotation:
   injectable:
+  json_annotation:
   intl:
   shimmer:
   slang:

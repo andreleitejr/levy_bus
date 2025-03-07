@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 import 'package:levy_bus/bus.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 
 @Injectable(as: BusRepository)
 final class BusRepositoryImpl implements BusRepository {

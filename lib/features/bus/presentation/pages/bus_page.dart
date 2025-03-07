@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:levy_bus/bus.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 import 'package:levy_theme/core/theme/theme.dart';
 
 @RoutePage()
@@ -24,7 +24,7 @@ final class _BusPageState extends ConsumerState<BusPage> {
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(busNotifierProvider.notifier).init(widget.search);
+      ref.read(busNotifierProvider.notifier).init();
     });
   }
 

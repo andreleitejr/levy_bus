@@ -2,7 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:intl/intl.dart';
 import 'package:levy_bus/bus.dart';
 import 'package:levy_core/core.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 
 @Injectable(as: BusDataSource, env: [InjectEnv.mock])
 final class BusDataSourceMock implements BusDataSource {

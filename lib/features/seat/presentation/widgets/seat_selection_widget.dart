@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:levy_bus/features/seat/presentation/widgets/seat_selection_header_widget.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 import 'package:levy_theme/core/theme/theme.dart';
 
 final class SeatSelectionWidget extends StatelessWidget {

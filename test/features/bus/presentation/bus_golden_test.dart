@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 import 'package:levy_bus/bus.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 import 'package:levy_test_utils/test_utils.dart';
 import 'package:levy_theme/core/theme/theme.dart';
 import 'package:mocktail/mocktail.dart';

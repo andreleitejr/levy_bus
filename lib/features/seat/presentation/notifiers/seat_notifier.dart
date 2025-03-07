@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:levy_bus/features/seat/presentation/states/seat_state.dart';
-import 'package:levy_shared_entities/entities.dart';
+import 'package:levy_shared_entities/shared_entities.dart';
 
 final class SeatNotifier extends StateNotifier<SeatState> {
   SeatNotifier(List<SeatEntity> seats) : super(SeatState.loading());
