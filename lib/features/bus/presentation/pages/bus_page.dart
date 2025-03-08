@@ -7,12 +7,7 @@ import 'package:levy_theme/core/theme/theme.dart';
 
 @RoutePage()
 final class BusPage extends ConsumerStatefulWidget {
-  const BusPage({
-    super.key,
-    required this.search,
-  });
-
-  final SearchEntity search;
+  const BusPage({super.key});
 
   @override
   ConsumerState<BusPage> createState() => _BusPageState();
@@ -86,6 +81,8 @@ final class _BusPageState extends ConsumerState<BusPage> {
     final returnBus = state.returnBus;
 
     if (departureBus != null && returnBus != null) {
+      final buses = [departureBus, returnBus];
+      ref.read(busProvider.notifier).state = buses;
       router.pushNamed('/payment');
     }
   }

@@ -17,17 +17,10 @@ import 'package:levy_shared_entities/shared_entities.dart' as _i5;
 
 /// generated route for
 /// [_i1.BusPage]
-class BusRoute extends _i3.PageRouteInfo<BusRouteArgs> {
-  BusRoute({
-    _i4.Key? key,
-    required _i5.SearchEntity search,
-    List<_i3.PageRouteInfo>? children,
-  }) : super(
+class BusRoute extends _i3.PageRouteInfo<void> {
+  const BusRoute({List<_i3.PageRouteInfo>? children})
+      : super(
           BusRoute.name,
-          args: BusRouteArgs(
-            key: key,
-            search: search,
-          ),
           initialChildren: children,
         );
 
@@ -36,29 +29,9 @@ class BusRoute extends _i3.PageRouteInfo<BusRouteArgs> {
   static _i3.PageInfo page = _i3.PageInfo(
     name,
     builder: (data) {
-      final args = data.argsAs<BusRouteArgs>();
-      return _i1.BusPage(
-        key: args.key,
-        search: args.search,
-      );
+      return const _i1.BusPage();
     },
   );
-}
-
-class BusRouteArgs {
-  const BusRouteArgs({
-    this.key,
-    required this.search,
-  });
-
-  final _i4.Key? key;
-
-  final _i5.SearchEntity search;
-
-  @override
-  String toString() {
-    return 'BusRouteArgs{key: $key, search: $search}';
-  }
 }
 
 /// generated route for
